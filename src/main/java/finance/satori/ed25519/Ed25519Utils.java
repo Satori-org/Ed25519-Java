@@ -41,7 +41,7 @@ public class Ed25519Utils {
     public static void main(String[] args) throws Exception {
         PublicKey publicKey = getPublic("6a050aa140c99801cf2613f4a5b5de033d2ff31363d2c4ab967ffacd4d1bce34");
         Boolean aBoolean = ed25519VerifySign(publicKey, "123123", "240ab1f6d13b0092f659d2dadd667efcb8d4ce27475f29632061611a856f7e1202a7e75ab656f34838c405b7444db511a533530260bdb230bb6e4cab3f7de18c");
-        System.out.println("校验结果为：" + aBoolean);
+        System.out.println(aBoolean);
 //        KeyPair keyPair = ed25519GenerateKeyPair();
 //        System.out.println("privateKey:" + Utils.bytesToHex(keyPair.getPrivate().getEncoded()));
 //        System.out.println("publicKey:" + Utils.bytesToHex(keyPair.getPublic().getEncoded()));

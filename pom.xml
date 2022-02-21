@@ -19,6 +19,16 @@
             <artifactId>eddsa</artifactId>
             <version>0.3.0</version>
         </dependency>
+        <dependency>
+            <groupId>cafe.cryptography</groupId>
+            <artifactId>curve25519-elisabeth</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.15</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -32,5 +42,11 @@
                 </configuration>
             </plugin>
         </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
     </build>
 </project>
